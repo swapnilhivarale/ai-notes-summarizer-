@@ -1,0 +1,32 @@
+{
+  "entities": {
+    "users": {
+      "title": "User Profiles",
+      "description": "User profiles authenticated via Firebase Auth",
+      "type": "object",
+      "properties": {
+        "uid": { "type": "string" },
+        "email": { "type": "string" },
+        "displayName": { "type": "string" },
+        "photoURL": { "type": "string" },
+        "lastLoginAt": { "type": "string", "format": "date-time" }
+      },
+      "required": ["uid", "email"]
+    },
+    "saved_notes": {
+      "title": "Saved Note Analyses",
+      "description": "Generated summaries, quizzes, and key points created by users",
+      "type": "object",
+      "properties": {
+        "userId": { "type": "string" },
+        "fileName": { "type": "string" },
+        "fileType": { "type": "string" },
+        "summary": { "type": "string" },
+        "keyPoints": { "type": "array" },
+        "quiz": { "type": "array" },
+        "createdAt": { "type": "string", "format": "date-time" }
+      },
+      "required": ["userId", "fileName", "summary"]
+    }
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "name": "AI Notes Summarizer",
+  "description": "Upload study notes or PDFs to get instant concise summaries, key concepts, and custom interactive quizzes.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
